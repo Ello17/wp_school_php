@@ -15,12 +15,12 @@ unset($_SESSION['data_pendaftar']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Pendaftaran Mahasiswa Baru</title>
-    <link rel="stylesheet" type="text/css" href="../css/daftar.css">
+    <link rel="stylesheet" type="text/css" href='../css/daftar.css'>
 </head>
 <body>
 
 <div class="container">
-    <h2>Form Pendaftaran Mahasiswa Baruuu</h2>
+    <h2>Form Pendaftaran Mahasiswa Baru</h2>
     
     <!-- Progress Bar -->
     <div class="progress-container">
@@ -70,12 +70,12 @@ unset($_SESSION['data_pendaftar']);
 
             <div class="form-group">
                 <label for="nik">NIK (No. KTP / 16 Digit):</label>
-                <input type="text" id="nik" name="nik" maxlength="16" placeholder="Masukkan 16 digit NIK" required>
+                <input type="text" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9]/g, '')"  id="nik" name="nik" maxlength="16" placeholder="Masukkan 16 digit NIK" required>
             </div>
 
             <div class="form-group">
                 <label for="nisn">NISN (10 Digit):</label>
-                <input type="text" id="nisn" name="nisn" maxlength="10" placeholder="Masukkan 10 digit NISN" required>
+                <input type="text" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9]/g, '')" id="nisn" name="nisn" maxlength="10" placeholder="Masukkan 10 digit NISN" required>
             </div>
 
             <div class="form-group">
@@ -122,7 +122,7 @@ unset($_SESSION['data_pendaftar']);
 
             <div class="form-group">
                 <label for="no_hp">No. HP / WhatsApp:</label>
-                <input type="text" id="no_hp" name="no_hp" placeholder="08xxxxxxxxxx" required>
+                <input type="text" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9]/g, '')" id="no_hp" name="no_hp" placeholder="08xxxxxxxxxx" required>
             </div>
 
             <div class="form-group">
@@ -132,7 +132,7 @@ unset($_SESSION['data_pendaftar']);
 
             <div class="form-group">
                 <label for="kode_pos">Kode Pos:</label>
-                <input type="text" id="kode_pos" name="kode_pos" maxlength="5" placeholder="5 digit kode pos" required>
+                <input type="text" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9]/g, '')" id="kode_pos" name="kode_pos" maxlength="5" placeholder="5 digit kode pos" required>
             </div>
         </div>
 
@@ -152,7 +152,7 @@ unset($_SESSION['data_pendaftar']);
 
             <div class="form-group">
                 <label for="tahun_lulus">Tahun Lulus:</label>
-                <input type="text" id="tahun_lulus" name="tahun_lulus" placeholder="Contoh: 2025" maxlength="4" required>
+                <input type="text" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9]/g, '')" id="tahun_lulus" name="tahun_lulus" placeholder="Contoh: 2025" maxlength="4" required>
             </div>
 
             <div class="form-group">
@@ -203,7 +203,7 @@ unset($_SESSION['data_pendaftar']);
 
             <div class="form-group">
                 <label for="no_hp_orang_tua">No. HP Orang Tua:</label>
-                <input type="text" id="no_hp_orang_tua" name="no_hp_orang_tua" placeholder="08xxxxxxxxxx" required>
+                <input type="text" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9]/g, '')" id="no_hp_orang_tua" name="no_hp_orang_tua" placeholder="08xxxxxxxxxx" required>
             </div>
 
             <div class="form-group">
